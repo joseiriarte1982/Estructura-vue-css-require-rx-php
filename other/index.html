@@ -1,0 +1,38 @@
+<!Doctype html>
+
+<html lang="es">
+<head>
+<title>New app</title>
+</head>
+<body>
+<div id="app">
+	<h1>{{title}}</h1>
+	<ul>
+		<li v-repeat="todos"
+		v-on:click="this.done = !thisldone"
+		:class="this.done ? 'done' : ' ' ">
+		{{this.content}}
+		</li>
+	</ul>
+</div>
+<script src="./vue.js"></script>
+<script>
+
+var App = new Vue({
+	el:"#app",
+	data:{
+		title:"todos",
+		todos:[{
+			done:true,
+			content:"estudiar vue"
+		},
+		{
+			done:false,
+			content:"estudiar rx"
+		}]
+	}
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/require.js"></script>
+  <script>
+   const base = "./";
+	require(['./js/config.js'],function(){
+	require(['main',],function(){
+
+
+
+	})
+	})
+	</script>
+</head>
+<body>
+<!--<div id="example">
+  <my-component></my-component>
+</div>--
+<div id="wrap">
+<button v-on:click="showModal">Show Modal</button>
+<button v-on:click="hideModal">Hide Modal</button>
+</div>-->
+<div id="app">
+  <div>{{ count }}</div>
+  <button v-stream:click="plus$">+</button>
+  <button v-stream:click="minus$">-</button>
+  <my-component v-stream:click="more$"></my-component>
+</div>
+
+
+</br>
+</br>
+<div id="miInstancia" class="container">
+<div class="row">Ui element</div>
+<input type="text" v-model="nuevalibreria" class="form-control">
+<button v-on:click="addLibrary">Agregar</button>
+<button v-on:click="deleteLibrary">Borrar</button>
+<p></p>
+<div > Listado</div>
+<ul class="nav nav-pills">
+<li v-for="libreria in librerias" class="active"><a href="#">{{libreria}}</a></li>
+</ul>
+<pre>{{$data}}</pre>
+
+</div>
+<p></p>
+<div id="app-4">
+<my-header></my-header>
+  <h1>{{title}}</h1>
+  <ol>
+    <li v-for="todo in todos"
+	v-on:click="todo.done = !todo.done"
+		:class="todo.done ? 'done' : ' ' ">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+
+</body>
+</html>

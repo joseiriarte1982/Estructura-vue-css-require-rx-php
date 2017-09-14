@@ -1,0 +1,59 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+#loginform{
+margin-top:54px;	
+}
+.loginform > div {
+
+max-width:300px;
+margin: 10px auto;	
+}
+.loginform > input {
+border:1px solid #ddd;
+border-radius:5px;
+width: 300px;
+padding: 6px;
+background: #fff;
+color: #333;
+font-weight: 300;
+}
+#remember > input{
+	float:left;
+	width:20px;
+	margin:10px;
+}
+#remember > span{
+	float:left;
+	margin:10px;
+}
+.forgotpasswordlink{
+	max-width: 300px;
+    margin: 0 auto;
+    display: block;
+	margin-top:10px;
+}
+#loginbtn {
+width: 300px;
+color:white;
+font-weight:bold;
+font-size:16px;
+padding-top:12px;
+padding-bottom:10px;
+padding-right:8px;
+border-bottom:2px solid #36f;
+padding-left:8px;
+margin:0px auto;
+background-color: #36f;
+
+border-radius:5px;
+}
+#loginbtn:hover{
+background:#69f;
+}
+#loginbtn:active{
+background:#39c;
+}
