@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>JS Bin</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link href="./css/styleLoginPage.css" rel="stylesheet">	
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="../css/styleLoginPage.css" rel="stylesheet">	
 	
-  <script src="./js/require.js"></script>
+  <script src="../js/require.js"></script>
  
+
 	<style>
 	[v-cloak]{
 		display:none;
@@ -53,14 +54,13 @@
 <div><h2>{{count}}</h2></div>
 <button v-stream:click="add$">Add</button>
 </div>
-
  <script>
 
 	
 	
-  var base = "./"
-	require(['./js/config.js'],function(){
-	require(['counter']);
+  var base = "../"
+	require(['../js/config.js'],function(){
+	require(['myleccion2']);
 	})
 	</script>
 </body>
